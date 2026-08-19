@@ -6,6 +6,7 @@ export interface Project {
   desc: string;
   stack: string[];
   link: string | null;
+  demo: string | null;
 }
 
 export interface SkillGroup {
@@ -28,4 +29,5 @@ export interface BootLine {
 export interface NavItem {
   id: string;
   label: string;
+  path: string;
 }

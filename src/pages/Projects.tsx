@@ -1,10 +1,11 @@
-import { ArrowUpRight, ExternalLink } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import { PROJECTS } from "../data/content";
-import StatusPill from "./StatusPill";
+import StatusPill from "../components/StatusPill";
+import Button from "../components/Button";
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative max-w-5xl mx-auto px-5 sm:px-8 py-16 border-t border-zinc-800">
+    <section className="relative max-w-5xl mx-auto px-5 sm:px-8 py-16">
       <p className="font-mono text-xs text-teal-400 mb-6">./projects</p>
       <div className="grid sm:grid-cols-2 gap-5">
         {PROJECTS.map((p) => (
@@ -28,26 +29,16 @@ export default function Projects() {
               ))}
             </div>
             {(p.demo || p.link) && (
-              <div className="mt-4 flex items-center gap-4">
+              <div className="mt-5 flex flex-wrap gap-2.5">
                 {p.demo && (
-                  <a
-                    href={p.demo}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="font-mono text-xs text-teal-300 hover:text-teal-200 flex items-center gap-1 w-fit focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 rounded"
-                  >
-                    live demo <ExternalLink size={12} />
-                  </a>
+                  <Button href={p.demo} external variant="secondary">
+                    <ExternalLink size={13} /> Live demo
+                  </Button>
                 )}
                 {p.link && (
-                  <a
-                    href={p.link}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="font-mono text-xs text-purple-300 hover:text-purple-200 flex items-center gap-1 w-fit focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded"
-                  >
-                    source <ArrowUpRight size={12} />
-                  </a>
+                  <Button href={p.link} external variant="ghost">
+                    <Github size={13} /> Source
+                  </Button>
                 )}
               </div>
             )}
