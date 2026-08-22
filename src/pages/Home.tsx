@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Github, MapPin } from "lucide-react";
+import { Github, Linkedin, MapPin } from "lucide-react";
 import { BOOT_LINES } from "../data/content";
 import { useTypewriter } from "../hooks/useTypewriter";
 import Button from "../components/Button";
@@ -50,6 +50,9 @@ export default function Home() {
           </Button>
           <Button href="https://github.com/Oluwagbenga9999" external variant="ghost">
             <Github size={14} /> github
+          </Button>
+          <Button href="https://www.linkedin.com/in/faruq-alao/" external variant="ghost">
+            <Linkedin size={14} /> linkedin
           </Button>
         </div>
       </div>

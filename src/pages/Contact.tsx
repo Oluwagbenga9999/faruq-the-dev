@@ -1,4 +1,4 @@
-import { Download, Github, Mail, Terminal } from "lucide-react";
+import { Download, Github, Linkedin, Mail, Terminal } from "lucide-react";
 import Button from "../components/Button";
 
 export default function Contact() {
@@ -11,13 +11,16 @@ export default function Contact() {
           Open to frontend and DevOps roles, and always glad to talk about builds in progress.
         </p>
         <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
-          <Button href="mailto:faruq.g.alao@gmail.com" variant="primary">
-            <Mail size={14} /> faruq.g.alao@gmail.com
+          <Button href="mailto:faruq.o.alao@gmail.com" variant="primary">
+            <Mail size={14} /> faruq.o.alao@gmail.com
           </Button>
           <Button href="https://github.com/Oluwagbenga9999" external variant="ghost">
             <Github size={14} /> GitHub
           </Button>
-          <Button href="/resume.pdf" variant="ghost">
+          <Button href="https://www.linkedin.com/in/faruq-alao/" external variant="ghost">
+            <Linkedin size={14} /> LinkedIn
+          </Button>
+          <Button href="/resume.pdf" external variant="ghost">
             <Download size={14} /> resume.pdf
           </Button>
         </div>
