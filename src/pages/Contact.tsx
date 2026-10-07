@@ -8,7 +8,7 @@ export default function Contact() {
         <Terminal className="mx-auto text-teal-400 mb-4" size={28} />
         <h2 className="font-mono text-xl sm:text-2xl font-bold">./contact --open-to-work</h2>
         <p className="text-zinc-400 mt-3 max-w-md mx-auto">
-          Open to frontend and DevOps roles, and always glad to talk about builds in progress.
+          Open to Software and DevOps Enginiering roles, and always glad to talk about builds in progress.
         </p>
         <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
           <Button href="mailto:faruq.o.alao@gmail.com" variant="primary">
@@ -20,7 +20,7 @@ export default function Contact() {
           <Button href="https://www.linkedin.com/in/faruq-alao/" external variant="ghost">
             <Linkedin size={14} /> LinkedIn
           </Button>
-          <Button href="/resume.pdf" external variant="ghost">
+          <Button href="../../ALAO_O_ FARUQ_CV.pdf" external variant="ghost">
             <Download size={14} /> resume.pdf
           </Button>
         </div>
