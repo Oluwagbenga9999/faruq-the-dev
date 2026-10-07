@@ -107,7 +107,7 @@ export const EXPERIENCE: ExperienceItem[] = [
   {
     range: "2022 — 2024",
     role: "Desktop Publisher",
-    org: "Rose of Sharon Café,",
+    org: "Rose of Sharon Café, Kwara",
     notes: ["Produced print-ready documents and publications under tight deadlines",	"Built static portfolio page for customers using html/css."],
   },
   {
