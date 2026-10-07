@@ -1,7 +1,7 @@
 import type { BootLine, ExperienceItem, NavItem, Project, SkillGroup } from "./types";
 
 export const BOOT_LINES: BootLine[] = [
-  { prompt: "$ whoami", after: "faruq_alao — frontend developer / trainee devops" },
+  { prompt: "$ whoami", after: "faruq_alao — Fullstack & DevOps Engineer" },
   { prompt: "$ cat mission.txt", after: "Physics grad turned frontend dev. I ship real interfaces, not tutorials." },
 ];
 
