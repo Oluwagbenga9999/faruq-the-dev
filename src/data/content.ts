@@ -33,6 +33,14 @@ export const SKILLS: SkillGroup[] = [
     items: ["Docker", "Git", "GitHub Actions", "AWS", "Linux", "Nginx", "Terraform", "Kubernetes", "Prometheus", "CI/CD Pipelines"],
   },
   {
+    label: "testing",
+    items: ["Unit testing (Mocha)", "Integration & API testing"],
+  },
+  {
+    label: "collaboration",
+    items: ["Slack", "GitHub"],
+  },
+  {
     label: "other",
     items: ["Data Analysis", "IT Support", "Team Collaboration"],
   },
@@ -84,25 +92,28 @@ export const PROJECTS: Project[] = [
 export const EXPERIENCE: ExperienceItem[] = [
   {
     range: "2025 — Present",
-    role: "Frontend Software Engineering Intern",
-    org: "The Haven & Hues, Lagos",
+    role: "Software Engineering Intern",
+    org: "The Haven & Hues et Asoebi, Lagos",
     notes: [
-      "Built responsive pages with HTML, CSS, JavaScript, and React",
-      "Converted UI/UX mockups into clean, accessible, high-performance code",
+      "Collaborated with team on product development, operations and Agile delivery for online fashion market platforms, worked with other engineers, product owners, and business stakeholders",
+      "Managed sharing of code snippets, error logs, screenshots, stack traces, and links to pull requests or issues using Slack to ensure on-time, high-quality delivery",
+      "Utilize Postman to support API validation, issue investigation, and technical documentation",
+      "Conduct root cause analysis (RCA) on service disruptions, reducing repeat incidents and improving platform stability",
+      "Develop and maintain process documentation, onboarding guides, KPIs, and operational reports to drive efficiency and visibility",
       "Fixed bugs and improved page load speed",
       "Collaborated with designers and backend engineers using Git/GitHub, standups, and sprint planning",
     ],
+  },
+  {
+    range: "2022 — 2024",
+    role: "Desktop Publisher",
+    org: "Rose of Sharon Café,",
+    notes: ["Produced print-ready documents and publications under tight deadlines",	"Built static portfolio page for customers using html/css."],
   },
   {
     range: "2017 — 2018",
     role: "Resource Centre Supervisor / Mathematics Teacher",
     org: "Rotshol Splendid Private School, Lagos",
     notes: ["Taught senior secondary Mathematics and Computer Science", "Supervised the school's resource centre"],
-  },
-  {
-    range: "2022 — 2024",
-    role: "Desktop Publisher",
-    org: "Rose of Sharon Café,",
-    notes: ["•	Produced print-ready documents and publications under tight deadlines, •	Built static portfolio page for customers using html/css."],
   },
 ];
