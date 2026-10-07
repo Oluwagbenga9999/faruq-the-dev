@@ -2,7 +2,7 @@ import type { BootLine, ExperienceItem, NavItem, Project, SkillGroup } from "./t
 
 export const BOOT_LINES: BootLine[] = [
   { prompt: "$ whoami", after: "faruq_alao — Fullstack & DevOps Engineer" },
-  { prompt: "$ cat mission.txt", after: "Physics grad turned Software Engineer. I ship real interfaces, not tutorials." },
+  { prompt: "$ cat mission.txt", after: "Physics grad turned Software Engineer. I ship real applications and cloud infrastructures." },
 ];
 
 export const NAV: NavItem[] = [
@@ -26,7 +26,11 @@ export const SKILLS: SkillGroup[] = [
   },
   {
     label: "database",
-    items: ["Data Analysis", "IT Support", "Team Collaboration"],
+    items: ["PostgreSQL", "Mongodb", "Supabase"],
+  },
+  {
+    label: "devops & tools",
+    items: ["Docker", "Git", "GitHub Actions", "AWS", "Linux", "Nginx", "Terraform", "Kubernetes", "Prometheus", "CI/CD Pipelines"],
   },
   {
     label: "other",
