@@ -2,7 +2,7 @@ import type { BootLine, ExperienceItem, NavItem, Project, SkillGroup } from "./t
 
 export const BOOT_LINES: BootLine[] = [
   { prompt: "$ whoami", after: "faruq_alao — Fullstack & DevOps Engineer" },
-  { prompt: "$ cat mission.txt", after: "Physics grad turned frontend dev. I ship real interfaces, not tutorials." },
+  { prompt: "$ cat mission.txt", after: "Physics grad turned Software Engineer. I ship real interfaces, not tutorials." },
 ];
 
 export const NAV: NavItem[] = [
@@ -16,15 +16,21 @@ export const NAV: NavItem[] = [
 export const SKILLS: SkillGroup[] = [
   {
     label: "languages_frameworks",
-    items: ["JavaScript", "TypeScript", "React", "HTML", "CSS", "Python", "C++"],
+    items: ["JavaScript", "TypeScript", "SQL", "React", "HTML", "CSS", "Python", "C++"],
   },
   {
     label: "tooling",
-    items: ["Vite", "Tailwind CSS", "React Router DOM", "Supabase", "FastAPI", "Git & GitHub", "Netlify", "Vercel"],
+    items: ["Node.js", "Express.js", "RESTful APIs", "JWT Authentication",
+      "Vite", "Tailwind CSS", "React Router DOM", "Supabase", "FastAPI",
+      "Git & GitHub", "Netlify", "Vercel"],
+  },
+  {
+    label: "database",
+    items: ["Data Analysis", "IT Support", "Team Collaboration"],
   },
   {
     label: "other",
-    items: ["Data Analysis", "IT Support", "Customer Service", "Team Collaboration"],
+    items: ["Data Analysis", "IT Support", "Team Collaboration"],
   },
 ];
 
@@ -90,9 +96,9 @@ export const EXPERIENCE: ExperienceItem[] = [
     notes: ["Taught senior secondary Mathematics and Computer Science", "Supervised the school's resource centre"],
   },
   {
-    range: "2015 — 2017",
+    range: "2022 — 2024",
     role: "Desktop Publisher",
-    org: "Rose of Sharon Café, Ikeja",
-    notes: ["Produced print-ready documents and publications under tight deadlines"],
+    org: "Rose of Sharon Café,",
+    notes: ["•	Produced print-ready documents and publications under tight deadlines, •	Built static portfolio page for customers using html/css."],
   },
 ];
