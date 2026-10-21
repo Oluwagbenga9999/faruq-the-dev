@@ -18,7 +18,7 @@ export const SKILLS: SkillGroup[] = [
     label: "languages_frameworks",
     items: ["JavaScript", "TypeScript", "SQL", "React", "HTML", "CSS", "Python", "C++"],
   },
-{
+  {
     label: "tooling",
     items: ["Node.js", "Express.js", "RESTful APIs", "JWT Authentication",
       "Vite", "Tailwind CSS", "React Router DOM", "FastAPI",
@@ -47,7 +47,7 @@ export const SKILLS: SkillGroup[] = [
 ];
 
 export const PROJECTS: Project[] = [
-    {
+  {
     name: "Voting App: Code to Kubernetes",
     status: "Shipped",
     desc: "A CI/CD pipeline for Docker's sample voting app. A push to main runs Helm lint and tests, builds three service images, blocks on HIGH/CRITICAL Trivy findings, publishes to GHCR tagged by commit SHA, and deploys to Kubernetes on AWS EKS with Helm. I hardened the Dockerfiles (pinned, non-root), wrote the Terraform for the EKS cluster and the Helm chart, moved secrets into GitHub Actions and a Kubernetes Secret, and documented Helm rollbacks.",
