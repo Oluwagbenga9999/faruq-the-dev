@@ -18,19 +18,19 @@ export const SKILLS: SkillGroup[] = [
     label: "languages_frameworks",
     items: ["JavaScript", "TypeScript", "SQL", "React", "HTML", "CSS", "Python", "C++"],
   },
-  {
+{
     label: "tooling",
     items: ["Node.js", "Express.js", "RESTful APIs", "JWT Authentication",
-      "Vite", "Tailwind CSS", "React Router DOM", "Supabase", "FastAPI",
+      "Vite", "Tailwind CSS", "React Router DOM", "FastAPI",
       "Git & GitHub", "Netlify", "Vercel"],
   },
   {
     label: "database",
-    items: ["PostgreSQL", "Mongodb", "Supabase"],
+    items: ["PostgreSQL", "MongoDB", "Supabase"],
   },
   {
     label: "devops & tools",
-    items: ["Docker", "Git", "GitHub Actions", "AWS", "Linux", "Nginx", "Terraform", "Kubernetes", "Prometheus", "CI/CD Pipelines"],
+    items: ["Docker", "GitHub Actions", "AWS", "Linux", "Nginx", "Terraform", "Kubernetes", "Prometheus", "Grafana", "CI/CD Pipelines", "Helm", "Trivy", "Grafana", "Loki", "Jaeger", "OpenTelemetry", "Alertmanager"],
   },
   {
     label: "testing",
@@ -38,7 +38,7 @@ export const SKILLS: SkillGroup[] = [
   },
   {
     label: "collaboration",
-    items: ["Slack", "GitHub"],
+    items: ["Slack", "Postman", "Agile / Sprint planning"],
   },
   {
     label: "other",
@@ -47,6 +47,30 @@ export const SKILLS: SkillGroup[] = [
 ];
 
 export const PROJECTS: Project[] = [
+    {
+    name: "Voting App: Code to Kubernetes",
+    status: "Shipped",
+    desc: "A CI/CD pipeline for Docker's sample voting app. A push to main runs Helm lint and tests, builds three service images, blocks on HIGH/CRITICAL Trivy findings, publishes to GHCR tagged by commit SHA, and deploys to Kubernetes on AWS EKS with Helm. I hardened the Dockerfiles (pinned, non-root), wrote the Terraform for the EKS cluster and the Helm chart, moved secrets into GitHub Actions and a Kubernetes Secret, and documented Helm rollbacks.",
+    stack: ["Docker", "GitHub Actions", "Terraform", "AWS EKS", "Helm", "Trivy"],
+    link: "https://github.com/Oluwagbenga9999/example-voting-app",
+    demo: null,
+  },
+  {
+    name: "Robot Shop: Observability & SRE",
+    status: "Shipped",
+    desc: "Monitoring and incident response for a microservice shop on Kubernetes (built on Instana's Robot Shop sample). I set up Prometheus, Alertmanager and Grafana with blackbox probes and a health dashboard, Loki and Fluent Bit for logs, and Jaeger with OpenTelemetry for traces. I defined a 99% availability SLO with an error-budget policy, a Slack alert with a runbook, and ran an incident drill that ended in a blameless postmortem.",
+    stack: ["Kubernetes", "Prometheus", "Grafana", "Loki", "Jaeger", "OpenTelemetry"],
+    link: "https://github.com/Oluwagbenga9999/robot-shop",
+    demo: null,
+  },
+  {
+    name: "ShipIt Board",
+    status: "Shipped",
+    desc: "A small full-stack task board used to practise delivery end to end. Lint and tests run on every push; on main the pipeline builds a Docker image, publishes it to GHCR and deploys it to an AWS EC2 instance over SSH with Docker Compose.",
+    stack: ["Node.js", "Docker", "GitHub Actions", "AWS EC2"],
+    link: "https://github.com/Oluwagbenga9999/fullstackdevpos",
+    demo: null,
+  },
   {
     name: "MeterCalc",
     status: "Shipped",
@@ -58,7 +82,7 @@ export const PROJECTS: Project[] = [
   {
     name: "Flower Shop",
     status: "In progress",
-    desc: "A responsive e-commerce frontend for an online flower shop. Customers can browse the catalogue, manage a cart, register and log in, place orders, and track their order history, while admins manage products through a protected dashboard with image uploads. Built with ** React 19**, ** Vite **, and ** Tailwind CSS v4 **, with client - side routing, context - based state management, and a REST API backend.",
+    desc: "A responsive e-commerce frontend for an online flower shop. Customers browse the catalogue, manage a cart, register and log in, place orders and track their order history. Admins manage products through a protected dashboard with image uploads. Built with React 19, Vite and Tailwind CSS v4, with client-side routing, context-based state and a REST API backend.",
     stack: ["React", "Vite", "MongoDB", "Render"],
     link: "https://github.com/Oluwagbenga9999/flowershopfrontend",
     demo: "https://flowershopfrontend.vercel.app/",

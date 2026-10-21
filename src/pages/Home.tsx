@@ -37,7 +37,7 @@ export default function Home() {
         <div>
           <h1 className="font-mono text-2xl sm:text-4xl font-bold tracking-tight">Faruq Alao</h1>
           <p className="mt-2 text-zinc-400 max-w-md">
-            •	Fullstack & DevOps Engineer delivering high-performance web applications and resilient cloud infrastructure.
+            Fullstack & DevOps Engineer delivering high-performance web applications and resilient cloud infrastructure.
           </p>
           <p className="font-mono mt-2 flex items-center gap-1.5 text-xs text-zinc-500">
             <MapPin size={13} /> Lagos, Nigeria
