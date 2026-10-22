@@ -30,7 +30,7 @@ export const SKILLS: SkillGroup[] = [
   },
   {
     label: "devops & tools",
-    items: ["Docker", "GitHub Actions", "AWS", "Linux", "Nginx", "Terraform", "Kubernetes", "Prometheus", "Grafana", "CI/CD Pipelines", "Helm", "Trivy", "Grafana", "Loki", "Jaeger", "OpenTelemetry", "Alertmanager"],
+    items: ["Docker", "GitHub Actions", "AWS", "Linux", "Terraform", "Kubernetes", "Helm", "Trivy", "Prometheus", "Grafana", "Loki", "Jaeger", "OpenTelemetry", "Alertmanager", "CI/CD Pipelines"],
   },
   {
     label: "testing",
