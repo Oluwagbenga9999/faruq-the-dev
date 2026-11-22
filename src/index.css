@@ -69,7 +69,15 @@ body {
 }
 
 .tech-tag {
-  @apply font-mono text-[10px] px-1.5 py-1 rounded border border-teal-900/80 text-teal-400/90 bg-teal-950/20;
+  @apply font-mono text-[10px] px-1.5 py-1 rounded border border-teal-900/80 text-teal-400/90 bg-teal-950/20 inline-flex items-center gap-1.5;
+}
+
+.tech-icon-chip {
+  @apply w-8 h-8 rounded-md border border-zinc-800 bg-zinc-950 flex items-center justify-center transition-transform hover:-translate-y-0.5;
+}
+
+.skill-logo-card {
+  @apply min-h-14 rounded-md border border-zinc-800 bg-zinc-950/80 px-2.5 py-2 flex items-center gap-2 text-[11px] text-zinc-300;
 }
 .grid-bg {
   background-image: linear-gradient(to right, rgba(139, 92, 246, 0.06) 1px, transparent 1px),

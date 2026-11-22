@@ -2,6 +2,8 @@ import { ArrowDown, ArrowUpRight, Github, Linkedin, MapPin } from "lucide-react"
 import { PROJECTS, SKILLS } from "../data/content";
 import Button from "../components/Button";
 import StatusPill from "../components/StatusPill";
+import TechIcon from "../components/TechIcon";
+import TechBadge from "../components/TechBadge";
 
 export default function Home() {
   const featuredProjects = [PROJECTS[0], PROJECTS[1], PROJECTS[3]];
@@ -50,6 +52,13 @@ export default function Home() {
                   {group.label.slice(0, 2).toUpperCase()}
                 </div>
                 <h3 className="mt-4 font-mono text-xs text-zinc-100">{group.label}</h3>
+                <div className="mt-3 flex items-center gap-3">
+                  {group.items.slice(0, 4).map((item) => (
+                    <span key={item} title={item} className="tech-icon-chip">
+                      <TechIcon name={item} size={17} />
+                    </span>
+                  ))}
+                </div>
                 <p className="mt-1.5 text-xs text-zinc-500 leading-5">{group.items.slice(0, 4).join(" · ")}</p>
               </div>
             ))}
@@ -89,9 +98,7 @@ export default function Home() {
                 <h3 className="mt-3 font-mono text-lg sm:text-xl font-semibold text-zinc-100">{project.name}</h3>
                 <p className="mt-3 text-sm text-zinc-400 leading-6">{project.desc}</p>
                 <div className="mt-4 flex flex-wrap gap-1.5">
-                  {project.stack.map((item) => (
-                    <span key={item} className="tech-tag">{item}</span>
-                  ))}
+                  {project.stack.map((item) => <TechBadge key={item} name={item} />)}
                 </div>
                 <div className="mt-5 flex gap-2.5">
                   {project.demo && (

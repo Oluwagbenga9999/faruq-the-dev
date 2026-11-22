@@ -2,6 +2,7 @@ import { ExternalLink, Github } from "lucide-react";
 import { PROJECTS } from "../data/content";
 import StatusPill from "../components/StatusPill";
 import Button from "../components/Button";
+import TechBadge from "../components/TechBadge";
 
 export default function Projects() {
   return (
@@ -33,14 +34,7 @@ export default function Projects() {
             </div>
             <p className="text-sm text-zinc-400 leading-relaxed flex-1">{p.desc}</p>
             <div className="mt-4 flex flex-wrap gap-1.5">
-              {p.stack.map((s) => (
-                <span
-                  key={s}
-                  className="font-mono text-[10px] px-1.5 py-0.5 rounded text-teal-400/90 bg-teal-950/30 border border-teal-900"
-                >
-                  {s}
-                </span>
-              ))}
+              {p.stack.map((s) => <TechBadge key={s} name={s} />)}
             </div>
             {(p.demo || p.link) && (
               <div className="mt-5 flex flex-wrap gap-2.5">

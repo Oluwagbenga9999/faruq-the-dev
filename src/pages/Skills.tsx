@@ -1,4 +1,5 @@
 import { SKILLS } from "../data/content";
+import TechIcon from "../components/TechIcon";
 
 export default function Skills() {
   return (
@@ -12,14 +13,12 @@ export default function Skills() {
         {SKILLS.map((group) => (
           <div key={group.label} className="border border-zinc-800 rounded-lg p-5 bg-zinc-900/40">
             <p className="font-mono text-xs text-purple-400 mb-3">{group.label}</p>
-            <div className="flex flex-wrap gap-2">
+            <div className="grid grid-cols-2 gap-2">
               {group.items.map((item) => (
-                <span
-                  key={item}
-                  className="font-mono text-[11px] px-2 py-1 rounded border border-zinc-700 text-zinc-300 bg-zinc-950"
-                >
-                  {item}
-                </span>
+                <div key={item} className="skill-logo-card">
+                  <TechIcon name={item} size={20} />
+                  <span>{item}</span>
+                </div>
               ))}
             </div>
           </div>
