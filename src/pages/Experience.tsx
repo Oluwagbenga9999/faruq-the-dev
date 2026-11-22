@@ -3,8 +3,9 @@ import { EXPERIENCE } from "../data/content";
 export default function Experience() {
   return (
     <section className="relative max-w-5xl mx-auto px-5 sm:px-8 py-16">
-      <p className="font-mono text-xs text-teal-400 mb-6">./experience</p>
-      <div className="space-y-8">
+      <p className="section-kicker">Career history</p>
+      <h1 className="section-heading mt-3">Experience</h1>
+      <div className="mt-8 space-y-8">
         {EXPERIENCE.map((e) => (
           <div key={e.role} className="grid sm:grid-cols-[140px_1fr] gap-2 sm:gap-6">
             <p className="font-mono text-xs text-zinc-500 pt-0.5">{e.range}</p>

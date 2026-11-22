@@ -6,8 +6,12 @@ import Button from "../components/Button";
 export default function Projects() {
   return (
     <section className="relative max-w-5xl mx-auto px-5 sm:px-8 py-16">
-      <p className="font-mono text-xs text-teal-400 mb-6">./projects</p>
-      <div className="grid sm:grid-cols-2 gap-5">
+      <p className="section-kicker">Selected work</p>
+      <h1 className="section-heading mt-3">Projects and practical work</h1>
+      <p className="mt-3 max-w-2xl text-sm text-zinc-500 leading-6">
+        A mix of cloud infrastructure, observability, full-stack products and production delivery.
+      </p>
+      <div className="mt-8 grid sm:grid-cols-2 gap-5">
         {PROJECTS.map((p) => (
           <div
             key={p.name}

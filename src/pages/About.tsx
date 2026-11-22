@@ -3,8 +3,9 @@ import { GraduationCap } from "lucide-react";
 export default function About() {
   return (
     <section className="relative max-w-5xl mx-auto px-5 sm:px-8 py-16">
-      <p className="font-mono text-xs text-teal-400 mb-3">./about</p>
-      <div className="grid sm:grid-cols-[1fr_auto] gap-8 items-start">
+      <p className="section-kicker">Profile</p>
+      <h1 className="section-heading mt-3">About me</h1>
+      <div className="mt-8 grid sm:grid-cols-[1fr_auto] gap-8 items-start">
         <p className="text-zinc-300 leading-relaxed max-w-2xl">
           •	Fullstack Developer with track record of shipping multiple complete projects.
           •	Fullstack + DevOps Engineer delivering high-performance web applications and resilient cloud infrastructure.

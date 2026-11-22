@@ -10,6 +10,99 @@ body {
   @apply bg-zinc-950 text-zinc-100 font-sans;
 }
 
+.section-kicker {
+  @apply font-mono text-[10px] tracking-[0.18em] text-teal-400 uppercase;
+}
+
+.section-heading {
+  @apply font-mono text-2xl sm:text-3xl font-bold tracking-tight text-zinc-100;
+}
+
+.tech-card {
+  @apply min-h-36 rounded-lg border border-zinc-800 bg-zinc-900/35 p-4 transition-all duration-300;
+}
+
+.tech-card:hover {
+  @apply border-purple-700/60 -translate-y-0.5 bg-zinc-900/70;
+  box-shadow: 0 16px 35px -28px rgba(168, 85, 247, 0.9);
+}
+
+.project-feature {
+  @apply grid lg:grid-cols-[280px_1fr] rounded-lg border border-zinc-800 bg-zinc-900/30 overflow-hidden transition-colors;
+}
+
+.project-feature:hover {
+  @apply border-purple-700/60;
+}
+
+.project-preview {
+  @apply bg-zinc-950/75 border-b lg:border-b-0 lg:border-r border-zinc-800 p-4 flex items-center min-h-52;
+}
+
+.mock-window {
+  @apply w-full rounded-md border border-zinc-800 bg-zinc-900 overflow-hidden;
+}
+
+.mock-bar {
+  @apply h-7 px-2 flex items-center gap-1 border-b border-zinc-800;
+}
+
+.mock-bar > span {
+  @apply w-1.5 h-1.5 rounded-full bg-zinc-700;
+}
+
+.mock-bar > div {
+  @apply h-1 w-14 ml-2 rounded-full bg-zinc-800;
+}
+
+.mock-body {
+  @apply h-36 flex;
+}
+
+.mock-sidebar {
+  @apply w-12 border-r border-zinc-800 p-2 flex flex-col items-center gap-2;
+}
+
+.mock-sidebar b,
+.mock-sidebar i {
+  @apply block rounded-sm;
+}
+
+.mock-sidebar b {
+  @apply w-5 h-5 border border-purple-700/70;
+}
+
+.mock-sidebar i {
+  @apply w-5 h-1 bg-zinc-800;
+}
+
+.mock-content {
+  @apply flex-1 p-3;
+}
+
+.mock-line {
+  @apply h-1.5 w-3/5 mt-2 rounded-full bg-zinc-700;
+}
+
+.mock-line.wide {
+  @apply w-4/5 mt-0;
+}
+
+.mock-line.short {
+  @apply w-2/5;
+}
+
+.mock-grid {
+  @apply grid grid-cols-3 gap-1.5 my-3;
+}
+
+.mock-grid div {
+  @apply h-12 rounded-sm border border-zinc-800 bg-gradient-to-br from-purple-950/50 to-teal-950/30;
+}
+
+.tech-tag {
+  @apply font-mono text-[10px] px-1.5 py-1 rounded border border-teal-900/80 text-teal-400/90 bg-teal-950/20;
+}
 .grid-bg {
   background-image: linear-gradient(to right, rgba(139, 92, 246, 0.06) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(139, 92, 246, 0.06) 1px, transparent 1px);
