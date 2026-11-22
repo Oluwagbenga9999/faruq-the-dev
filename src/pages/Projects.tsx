@@ -17,6 +17,16 @@ export default function Projects() {
             key={p.name}
             className="border border-zinc-800 rounded-lg p-5 bg-zinc-900/40 hover:border-purple-700/60 transition-colors flex flex-col"
           >
+            {p.screenshots && (
+              <div className={`project-gallery ${p.screenshots.length > 1 ? "project-gallery-multiple" : ""}`}>
+                {p.screenshots.map((screenshot) => (
+                  <figure key={screenshot.src} className="project-gallery-item">
+                    <img src={screenshot.src} alt={screenshot.alt} loading="lazy" />
+                    <figcaption>{screenshot.caption}</figcaption>
+                  </figure>
+                ))}
+              </div>
+            )}
             <div className="flex items-start justify-between gap-3 mb-2">
               <h3 className="font-mono font-semibold text-zinc-100">{p.name}</h3>
               <StatusPill status={p.status} />

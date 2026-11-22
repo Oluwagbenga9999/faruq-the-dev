@@ -4,7 +4,7 @@ import Button from "../components/Button";
 import StatusPill from "../components/StatusPill";
 
 export default function Home() {
-  const featuredProjects = PROJECTS.slice(0, 3);
+  const featuredProjects = [PROJECTS[0], PROJECTS[1], PROJECTS[3]];
 
   return (
     <main className="relative">
@@ -68,28 +68,17 @@ export default function Home() {
         <div className="mt-8 space-y-5">
           {featuredProjects.map((project, index) => (
             <article key={project.name} className="project-feature">
-              <div className="project-preview" aria-hidden="true">
-                <div className="mock-window">
-                  <div className="mock-bar">
-                    <span /><span /><span />
-                    <div />
-                  </div>
-                  <div className="mock-body">
-                    <div className="mock-sidebar">
-                      <b />
-                      <i /><i /><i /><i />
-                    </div>
-                    <div className="mock-content">
-                      <div className="mock-line wide" />
-                      <div className="mock-grid">
-                        <div /><div /><div />
-                      </div>
-                      <div className="mock-line" />
-                      <div className="mock-line short" />
-                    </div>
-                  </div>
-                </div>
-              </div>
+              {project.screenshots?.[0] && (
+                <figure className="project-preview">
+                  <img
+                    className="project-preview-image"
+                    src={project.screenshots[0].src}
+                    alt={project.screenshots[0].alt}
+                    loading="lazy"
+                  />
+                  <figcaption>{project.screenshots[0].caption}</figcaption>
+                </figure>
+              )}
               <div className="p-5 sm:p-6">
                 <div className="flex items-start justify-between gap-3">
                   <p className="font-mono text-[10px] text-teal-400">

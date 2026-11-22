@@ -12,7 +12,7 @@ export default function Experience() {
             <div className="border-l border-zinc-800 pl-5">
               <h3 className="font-semibold text-zinc-100">{e.role}</h3>
               <p className="font-mono text-xs text-purple-400 mb-2">{e.org}</p>
-              <ul className="text-sm text-zinc-400 space-y-1 list-disc list-inside">
+              <ul className="text-sm text-zinc-400 space-y-2 list-disc list-inside leading-6">
                 {e.notes.map((n) => (
                   <li key={n}>{n}</li>
                 ))}

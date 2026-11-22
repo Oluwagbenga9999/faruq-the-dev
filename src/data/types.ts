@@ -7,6 +7,11 @@ export interface Project {
   stack: string[];
   link: string | null;
   demo: string | null;
+  screenshots?: {
+    src: string;
+    alt: string;
+    caption: string;
+  }[];
 }
 
 export interface SkillGroup {
