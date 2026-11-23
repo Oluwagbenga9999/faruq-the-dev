@@ -2,31 +2,39 @@ import { ExternalLink, Github } from "lucide-react";
 import { PROJECTS } from "../data/content";
 import StatusPill from "../components/StatusPill";
 import Button from "../components/Button";
+import TechBadge from "../components/TechBadge";
 
 export default function Projects() {
   return (
     <section className="relative max-w-5xl mx-auto px-5 sm:px-8 py-16">
-      <p className="font-mono text-xs text-teal-400 mb-6">./projects</p>
-      <div className="grid sm:grid-cols-2 gap-5">
+      <p className="section-kicker">Selected work</p>
+      <h1 className="section-heading mt-3">Projects and practical work</h1>
+      <p className="mt-3 max-w-2xl text-sm text-zinc-500 leading-6">
+        A mix of cloud infrastructure, observability, full-stack products and production delivery.
+      </p>
+      <div className="mt-8 grid sm:grid-cols-2 gap-5">
         {PROJECTS.map((p) => (
           <div
             key={p.name}
             className="border border-zinc-800 rounded-lg p-5 bg-zinc-900/40 hover:border-purple-700/60 transition-colors flex flex-col"
           >
+            {p.screenshots && (
+              <div className={`project-gallery ${p.screenshots.length > 1 ? "project-gallery-multiple" : ""}`}>
+                {p.screenshots.map((screenshot) => (
+                  <figure key={screenshot.src} className="project-gallery-item">
+                    <img src={screenshot.src} alt={screenshot.alt} loading="lazy" />
+                    <figcaption>{screenshot.caption}</figcaption>
+                  </figure>
+                ))}
+              </div>
+            )}
             <div className="flex items-start justify-between gap-3 mb-2">
               <h3 className="font-mono font-semibold text-zinc-100">{p.name}</h3>
               <StatusPill status={p.status} />
             </div>
             <p className="text-sm text-zinc-400 leading-relaxed flex-1">{p.desc}</p>
             <div className="mt-4 flex flex-wrap gap-1.5">
-              {p.stack.map((s) => (
-                <span
-                  key={s}
-                  className="font-mono text-[10px] px-1.5 py-0.5 rounded text-teal-400/90 bg-teal-950/30 border border-teal-900"
-                >
-                  {s}
-                </span>
-              ))}
+              {p.stack.map((s) => <TechBadge key={s} name={s} />)}
             </div>
             {(p.demo || p.link) && (
               <div className="mt-5 flex flex-wrap gap-2.5">

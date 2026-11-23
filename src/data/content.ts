@@ -54,6 +54,13 @@ export const PROJECTS: Project[] = [
     stack: ["Docker", "GitHub Actions", "Terraform", "AWS EKS", "Helm", "Trivy"],
     link: "https://github.com/Oluwagbenga9999/example-voting-app",
     demo: null,
+    screenshots: [
+      {
+        src: "/Terraform.png",
+        alt: "Terraform EKS infrastructure and IAM configuration in a code editor",
+        caption: "Terraform configuration for the EKS infrastructure",
+      },
+    ],
   },
   {
     name: "Robot Shop: Observability & SRE",
@@ -62,6 +69,23 @@ export const PROJECTS: Project[] = [
     stack: ["Kubernetes", "Prometheus", "Grafana", "Loki", "Jaeger", "OpenTelemetry"],
     link: "https://github.com/Oluwagbenga9999/robot-shop",
     demo: null,
+    screenshots: [
+      {
+        src: "/grafana-monitoring.png",
+        alt: "Prometheus blackbox probe results for Robot Shop services in Grafana",
+        caption: "Service health probes in Prometheus",
+      },
+      {
+        src: "/Grafana.png",
+        alt: "Robot Shop application logs explored in Grafana Loki",
+        caption: "Application logs in Grafana Loki",
+      },
+      {
+        src: "/Jaeger.png",
+        alt: "Jaeger distributed trace showing the shipping service and database spans",
+        caption: "Request trace in Jaeger",
+      },
+    ],
   },
   {
     name: "ShipIt Board",
@@ -72,12 +96,19 @@ export const PROJECTS: Project[] = [
     demo: null,
   },
   {
-    name: "MeterCalc",
+    name: "PlazaBills (MeterCalc)",
     status: "Shipped",
     desc: "A shared electricity billing tool built for a compound manager in Lagos — calculates each tenant's cost from individual meter readings against a shared Supabase backend, with RLS-protected data.",
     stack: ["React", "Vite", "Supabase"],
     link: "https://github.com/Oluwagbenga9999/MeterBillCalculator",
     demo: "https://meter-bill-calculator-two.vercel.app/",
+    screenshots: [
+      {
+        src: "/metercalc.png",
+        alt: "PlazaBills landing page showing shared electricity billing and a sample tenant bill",
+        caption: "PlazaBills electricity billing interface",
+      },
+    ],
   },
   {
     name: "Flower Shop",
@@ -86,6 +117,13 @@ export const PROJECTS: Project[] = [
     stack: ["React", "Vite", "MongoDB", "Render"],
     link: "https://github.com/Oluwagbenga9999/flowershopfrontend",
     demo: "https://flowershopfrontend.vercel.app/",
+    screenshots: [
+      {
+        src: "/flower-shop.png",
+        alt: "Flower Shop product catalogue with flower and plant listings",
+        caption: "Product catalogue",
+      },
+    ],
   },
   {
     name: "Agri-Marketplace",
@@ -102,6 +140,13 @@ export const PROJECTS: Project[] = [
     stack: ["React", "TypeScript", "Tailwind CSS", "React Router"],
     link: "https://github.com/Oluwagbenga9999/Alakowe",
     demo: "https://alakowe-seven.vercel.app/",
+    screenshots: [
+      {
+        src: "/alakowe.png",
+        alt: "Alakowe How It Works page with topic search",
+        caption: "How It Works page",
+      },
+    ],
   },
   {
     name: "FASCO",
@@ -110,6 +155,13 @@ export const PROJECTS: Project[] = [
     stack: ["React", "Vite", "Tailwind CSS"],
     link: "https://github.com/Oluwagbenga9999/online-fashion-store",
     demo: "https://online-fashion-store-rho.vercel.app/",
+    screenshots: [
+      {
+        src: "/fasco.png",
+        alt: "FASCO fashion store homepage with featured collection",
+        caption: "Featured fashion collection",
+      },
+    ],
   },
   {
     name: "Movie Explorer",
@@ -118,6 +170,13 @@ export const PROJECTS: Project[] = [
     stack: ["React", "TMDB API", "Context API"],
     link: "https://github.com/Oluwagbenga9999/MovieApp",
     demo: null,
+    screenshots: [
+      {
+        src: "/movie-explorer.png",
+        alt: "Movie Explorer with search and movie poster results",
+        caption: "Movie search and discovery",
+      },
+    ],
   },
 ];
 
@@ -127,25 +186,24 @@ export const EXPERIENCE: ExperienceItem[] = [
     role: "Software Engineering Intern",
     org: "The Haven & Hues et Asoebi, Lagos",
     notes: [
-      "Collaborated with team on product development, operations and Agile delivery for online fashion market platforms, worked with other engineers, product owners, and business stakeholders",
-      "Managed sharing of code snippets, error logs, screenshots, stack traces, and links to pull requests or issues using Slack to ensure on-time, high-quality delivery",
-      "Utilize Postman to support API validation, issue investigation, and technical documentation",
-      "Conduct root cause analysis (RCA) on service disruptions, reducing repeat incidents and improving platform stability",
-      "Develop and maintain process documentation, onboarding guides, KPIs, and operational reports to drive efficiency and visibility",
-      "Fixed bugs and improved page load speed",
-      "Collaborated with designers and backend engineers using Git/GitHub, standups, and sprint planning",
+      "Contributed to product development and Agile delivery for online fashion platforms, working with engineers, product owners and business stakeholders.",
+      "Used Postman to validate APIs and support issue investigation and technical documentation.",
+      "Participated in root-cause analysis for service disruptions and documented findings to help reduce repeat issues.",
+      "Fixed application bugs and improved page load performance.",
+      "Created and maintained process documentation, onboarding guides, KPIs and operational reports.",
+      "Coordinated work with designers and backend engineers through GitHub, Slack, standups and sprint planning.",
     ],
   },
   {
     range: "2022 — 2024",
     role: "Desktop Publisher",
     org: "Rose of Sharon Café, Kwara",
-    notes: ["Produced print-ready documents and publications under tight deadlines", "Built static portfolio page for customers using html/css."],
+    notes: ["Produced print-ready documents and publications under tight deadlines.", "Built a static customer portfolio page with HTML and CSS."],
   },
   {
     range: "2017 — 2018",
     role: "Resource Centre Supervisor / Mathematics Teacher",
     org: "Rotshol Splendid Private School, Lagos",
-    notes: ["Taught senior secondary Mathematics and Computer Science", "Supervised the school's resource centre"],
+    notes: ["Taught senior secondary Mathematics and Computer Science.", "Supervised the school's resource centre."],
   },
 ];
